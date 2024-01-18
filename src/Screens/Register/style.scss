@@ -1,8 +1,69 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .reg {
-    width: 90%;
-    margin: auto;
-    color: $txt;
-    font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: auto;
+  color: $txt;
+  text-align: center;
+  &__main {
+    margin-top: clamp(32px, 14.95296vw, 128px);
+    font-size: clamp(13px, 6.07464vw, 52px);
+    font-family: "DM Sans", sans-serif;
+  }
+  &__inputs {
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    &__f {
+    }
+    &__text {
+      font-size: clamp(10px, 4.6728vw, 40px);
+      margin-top: clamp(8px, 3.73824vw, 32px);
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: $txt;
+    }
+    &__inp {
+      padding: clamp(10px, 4.6728vw, 40px);
+      width: clamp(125px, 58.41vw, 500px);
+      text-align: center;
+      background-color: $f-a;
+      border: none;
+      margin-top: clamp(8px, 3.73824vw, 32px);
+      color: $txt;
+      font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+    }
+    &__inp::placeholder {
+      color: #dbdbdb;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &__items {
+    margin-top: clamp(16px, 7.47648vw, 64px);
+    text-align: center;
+    &__btn {
+      background-color: $btn;
+      padding: clamp(7.5px, 3.5046vw, 30px);
+      width: clamp(115px, 53.737199999999994vw, 460px);
+
+      font-size: clamp(8px, 3.73824vw, 32px);
+      font-weight: 700;
+      color: $b;
+      border: none;
+      transition: 0.3s ease;
+    }
+    &__btn:hover {
+      cursor: pointer;
+      background-color: #d3c22e;
+      border-radius: 3px;
+    }
+    &__al {
+      margin-top: clamp(16px, 7.47648vw, 64px);
+      font-size: clamp(9.5px, 4.439159999999999vw, 38px);
+      font-family: "Roboto", sans-serif;
+      color: $txt;
+    }
+    &__al-l {
+      margin-left: clamp(5px, 2.3364vw, 20px);
+      color: $txt;
+    }
+  }
 }

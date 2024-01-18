@@ -1,0 +1,18 @@
+@import "../../styles/variables.scss";
+
+.login {
+  text-align: center;
+  &__main {
+    margin-top: clamp(32px, 14.95296vw, 128px);
+    margin-bottom: clamp(18.5px, 8.64468vw, 74px);
+    font-size: clamp(13px, 6.07464vw, 52px);
+    font-family: "DM Sans", sans-serif;
+    color: $txt;
+  }
+  &__items {
+    width: 70%;
+    margin: auto;
+    padding-top: clamp(16px, 7.47648vw, 64px);
+    line-height: clamp(12.5px, 5.840999999999999vw, 50px);
+  }
+}
