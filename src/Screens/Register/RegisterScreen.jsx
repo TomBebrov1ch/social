@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 
 import { Link } from "react-router-dom";
+import { gsap } from "gsap";
 
 import "../Register/style.scss";
 
 const RegisterScreen = () => {
+  useLayoutEffect(() => {
+    const tl = gsap.timeline();
+
+    tl.fromTo(".reg__main", { x: -400 }, { x: 60, duration: 0.45 });
+    tl.to(".reg__main", { x: 0, duration: 0.35 });
+  })
   return (
     <>
       <section className="reg-mob">
